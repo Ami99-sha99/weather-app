@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Clouds in the Sky -->
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+
+  <div class="weather-dashboard">
+    <h1>Weather Dashboard</h1>
+
+    <!-- Search Section -->
+    <div class="search">
+      <input type="text" id="location-input" placeholder="Enter city name" />
+      <button onclick="getWeather()">Get Weather</button>
+    </div>
+
+    <!-- Weather Information Section -->
+    <div class="weather-info">
+
+      <!-- Sun Animation with Rays -->
+      <div class="sun-animation">
+        <div class="sun"></div>
+        <div class="rays"></div>
+      </div>
+
+      <!-- Weather Details -->
+      <div class="details">
+        <h2 id="city">City Name</h2>
+        <p id="temp" class="temperature">0°C</p>
+        <p>Humidity: <span id="humidity">--%</span></p>
+        <p>Wind Speed: <span id="wind">-- km/h</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
